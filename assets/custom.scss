@@ -27,16 +27,20 @@ img{
 }
 .grid1-3{
     flex: 33.3%;
+    max-width: 33.3%;
 }
 .grid2-3{
     flex: 66.6%;
+    max-width: 66.6%;
 }
 .grid1-2{
     flex: 50%;
+    max-width: 50%
 }
 @media(max-width:991px){
     .tablet-6{
         flex: 50%;
+        max-width: 50%;
     }
     .tablet-12{
        flex: 0 0 100%;
@@ -46,6 +50,7 @@ img{
 @media(max-width:767px){
     .mobile-12{
         flex: 100%;
+        max-width: 100%;
     }
 }
 .flexbox{
