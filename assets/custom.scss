@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+body {
+    font-family: "Lato", Tahoma, sans-serif, Arial;
+    font-weight: 300;
+    text-align: center;
+    line-height: 25px;
+    font-size: 95%;
+    color: #474747;
+    padding: 0;
+    margin: 0;
+    a {
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+        &:hover {
+            color: white;
+        }
+    }
+}
+img{
+    max-width: 100%;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+.grid1-3{
+    flex: 33.3%;
+}
+.grid2-3{
+    flex: 66.6%;
+}
+.grid1-2{
+    flex: 50%;
+}
+@media(max-width:991px){
+    .tablet-6{
+        flex: 50%;
+    }
+    .tablet-12{
+       flex: 0 0 100%;
+       max-width: 100%;
+    }
+}
+@media(max-width:767px){
+    .mobile-12{
+        flex: 100%;
+    }
+}
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+}
+section {
+   align-items: center;
+   .icon{ 
+       width: 50px;
+   }
+}
+
+.separator {
+    border-right: solid 1px #c5c5c5;
+    margin: 0 15px;
+} 
+
+.social {
+    padding:10px 0 40px 0;
+    border-bottom: solid 1px #c5c5c5;
+    margin: 25px 0 25px 0; 
+    .bottomside{
+        margin: 10px 0;
+        
+        img{
+            &:hover{
+                opacity: 0.5;
+            }
+        }
+    }  
+    .button {
+        background-color: #be8d53;
+        padding: 10px 25px;
+        font-weight: 500; 
+    } 
+}
+.is_decathlon{
+    padding:40px 0;
+    .text_centered {
+        padding: 15px 25px;
+      
+    }
+    img { 
+        width: 100%;
+    }
+}
+.is_quechua{
+    padding:40px 0;
+    .banner{
+        img{
+            transform: scaleY(1.2)
+        }
+    }
+    .text_centered {
+        padding: 15px 25px;
+      
+    }
+    .logo-quechua {
+        width: 125px;
+    }
+    img { 
+        width: 100%; 
+    }
+}
+
+.best_brands{
+    padding:40px 0;
+    .text_centered {
+        padding: 15px 25px;
+    }
+    .logos{
+        img{
+            margin: 5px auto;
+            max-width: 357px;
+            max-height:  317px;
+        }
+    }
+}
+
+.find_in{
+    padding:40px 0;
+    .text_centered {
+        padding: 15px 65px;
+      
+    }  
+    iframe {
+        height: 350px;
+    }
+}
+footer{
+    padding:40px 0;
+    border-top: solid 1px #c5c5c5;
+    margin: 25px 0; 
+    a{
+        color: black;
+        &:hover{
+            color: #c5c5c5;
+        }
+    }
+    .text_centered {
+        padding: 5px 15px;
+      
+    }
+    .thank {
+        font-weight: bold;
+        padding: 20px 0;
+    }
+
+}
+
+
+/* Responsive */
+@media(max-width:992px){
+    .social {
+        .tablet-12{
+           margin: 20px 0;
+        }
+    }              
+}
+
+
+@media(max-width:767px){
+    .is_decathlon {
+        padding: 5px 0;
+        .grid1-3 {
+            margin-bottom: 20px;
+        }
+    }
+    .best_brands {
+        padding: 5px 0;
+        .grid1-3 {
+            margin-bottom: 20px;
+        }
+        img {
+            margin-bottom: 10px;
+        }
+    }
+    .is_quechua{
+        .logo-quechua{
+           margin-top:50px; 
+        }
+    }
+    .find_in {
+        padding: 5px 0;
+        .grid2-3 {
+            margin-top: 20px;
+        }
+        .grid1-3 {
+            margin-top: 20px;
+        }
+    }
+}
+     
